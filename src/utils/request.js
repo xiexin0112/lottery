@@ -7,6 +7,7 @@ import { nextTick } from 'vue'
 // create an axios instance
 const service = axios.create({
   // baseURL: process.env.VUE_APP_BASE_API,
+  // baseURL: 'http://localhost:8301',
   baseURL: 'http://cc.amazing6.in:8302',
   timeout: 60000, // request timeout
   headers: {
@@ -14,6 +15,7 @@ const service = axios.create({
     client: 'code',
     client_id: 'app',
     client_secret: '123456',
+    // Authorization: 'bearer f8b236ab-b6a4-4b48-843e-a73d242d2090'
     Authorization: 'bearer 06c20772-cdcc-4ab8-8370-7a8f201ba670'
   }
 })

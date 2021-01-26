@@ -18,7 +18,7 @@
       </tr>
       <tr class="val">
         <td>{{ selectText }}</td>
-        <td>10</td>
+        <td>100</td>
         <td><van-stepper @change="stepperChangeHandle" v-model="times" theme="round" button-size="24" disable-input /></td>
         <td>{{ sumAmount }}</td>
       </tr>
@@ -140,7 +140,7 @@ export default defineComponent({
     })
 
     const amount = computed(() => {
-      return Number((selectList.value.length * 10 * times.value).toFixed(1))
+      return Number((selectList.value.length * 100 * times.value).toFixed(1))
     })
 
     const fee = computed(() => {

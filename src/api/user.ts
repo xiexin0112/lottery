@@ -34,7 +34,7 @@ export function login (params) {
 
 export function loginSuccess (params) {
   return request({
-    url: '/system/user/success',
+    url: '/system/user/loginSuccess',
     method: 'get',
     params
   })

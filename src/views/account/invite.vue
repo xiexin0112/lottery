@@ -14,8 +14,8 @@
     <textarea class="link" v-model="inviteLink"></textarea>
   </div>
 
-  <router-link to="/rebate">
-    <van-button class="button" type="success" block>Rebates from friends record</van-button>
+  <router-link to="/inviteList">
+    <van-button class="button" type="success" block>Invite friends record</van-button>
   </router-link>
 
   <van-button class="button" @click="apply" block>Apply rebate</van-button>

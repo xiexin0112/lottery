@@ -66,7 +66,7 @@ service.interceptors.response.use(
     }
 
     const res = response.data
-    if (res.code !== '0000') {
+    if (res.code && res.code !== '0000') {
       nextTick(() => {
         res.message && Toast({
           message: res.message,

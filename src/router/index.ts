@@ -63,6 +63,18 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('../views/account/rebate.vue')
   },
   {
+    path: '/envelope',
+    name: 'envelope',
+    meta: { title: 'Envelope details' },
+    component: () => import('../views/account/envelope.vue')
+  },
+  {
+    path: '/inviteList',
+    name: 'inviteList',
+    meta: { title: 'Invite details' },
+    component: () => import('../views/account/inviteList.vue')
+  },
+  {
     path: '/invite',
     name: 'invite',
     meta: { title: 'Invitation rebate' },

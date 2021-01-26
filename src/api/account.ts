@@ -65,7 +65,29 @@ export function withdraw (data) {
 
 export function fetchRebate (data) {
   return request({
-    url: '/system/accountInfo/findUserAccount3OR5List',
+    url: '/system/rewardInfo/rewardInfoList',
+    method: 'post',
+    data: {
+      request: data,
+      userId: store.state.userInfo.userId
+    }
+  })
+}
+
+export function fetchEnvelope (data) {
+  return request({
+    url: '/system/envelopeInfo/getEnvelopeInfosByUserId',
+    method: 'post',
+    data: {
+      request: data,
+      userId: store.state.userInfo.userId
+    }
+  })
+}
+
+export function fetchInvite (data) {
+  return request({
+    url: '/system/user/findInvitationRecord',
     method: 'post',
     data: {
       request: data,

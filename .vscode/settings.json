@@ -1,3 +1,5 @@
+
+
 {
   "editor.detectIndentation": false,
   "editor.tabSize": 2,
@@ -28,75 +30,78 @@
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "diffEditor.ignoreTrimWhitespace": false,
-  "files.associations": {},
-  // 文件头部注释
-  "fileheader.customMade": {
-    "Descripttion": "",
-    "Author": "cong.wei",
-    "Date": "Do not edit",
+  "files.associations": {
+  
+  
   },
-  //函数注释
-  "fileheader.cursorMode": {
-    "name": "",
-    "test": "test font",
-    "msg": "",
-    "param": "",
-    "return": ""
+//函数注释
+"fileheader.cursorMode": {
+  "description":"",
+    "param":"{type}",
+    "return": "",
+    "example":""
+},
+"fileheader.customMade": {
+},
+"fileheader.configObj": {
+  "createHeader": false, // 默认打开
+  "autoAlready": false,
+  "supportAutoLanguage": [],
+  "prohibitAutoAdd": [ "js", "ts", "vue", "less", "tsx" ]
+},
+"editor.fontLigatures": null,
+"path-intellisense.mappings": {
+  "@": "${workspaceRoot}/src"
+},
+"[json]": {
+  "editor.defaultFormatter": "HookyQR.beautify"
+},
+"[javascript]": {
+  "editor.defaultFormatter": "HookyQR.beautify"
+},
+"window.zoomLevel": 0,
+"eslint.alwaysShowStatus": true,
+"code-runner.runInTerminal": true,
+"auto-close-tag.activationOnLanguage": [
+
+  "xml",
+  "php",
+  "blade",
+  "ejs",
+  "jinja",
+  "javascript",
+  "javascriptreact",
+  "typescript",
+  "typescriptreact",
+  "plaintext",
+  "markdown",
+  "vue",
+  "liquid",
+  "erb",
+  "lang-cfml",
+  "cfml",
+  "HTML (EEx)",
+  "HTML (Eex)",
+  "plist"
+],
+"vetur.validation.templateProps": true,
+"vetur.grammar.customBlocks": {
+
+  "docs": "md",
+  "i18n": "json"
+},
+"terminal.integrated.shell.linux": "",
+"vetur.format.defaultFormatterOptions": {
+
+  "js-beautify-html": {
+    "wrap_attributes": "force-expand-multiline"
   },
-  "fileheader.Author": "cong.wei",
-  "fileheader.LastModifiedBy": "cong.wei",
-  "editor.fontLigatures": null,
-  "path-intellisense.mappings": {
-    "@": "${workspaceRoot}/src"
-  },
-  "fileheader.tpl": "/* * @Author: {author}  *@Descripttion:'' * @Date: {createTime}  }  */",
-  "fileheader.configObj": {},
-  "[json]": {
-    "editor.defaultFormatter": "HookyQR.beautify"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "HookyQR.beautify"
-  },
-  "window.zoomLevel": 0,
-  "eslint.alwaysShowStatus": true,
-  "code-runner.runInTerminal": true,
-  "auto-close-tag.activationOnLanguage": [
-    "xml",
-    "php",
-    "blade",
-    "ejs",
-    "jinja",
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact",
-    "plaintext",
-    "markdown",
-    "vue",
-    "liquid",
-    "erb",
-    "lang-cfml",
-    "cfml",
-    "HTML (EEx)",
-    "HTML (Eex)",
-    "plist"
-  ],
-  "vetur.validation.templateProps": true,
-  "vetur.grammar.customBlocks": {
-    "docs": "md",
-    "i18n": "json"
-  },
-  "terminal.integrated.shell.linux": "",
-  "vetur.format.defaultFormatterOptions": {
-    "js-beautify-html": {
-      "wrap_attributes": "force-expand-multiline"
-    },
-    "prettyhtml": {
-      "printWidth": 100,
-      "singleQuote": false,
-      "wrapAttributes": false,
-      "sortAttributes": false
-    }
-  },
-  "javascript.updateImportsOnFileMove.enabled": "never"
+  "prettyhtml": {
+    "printWidth": 100,
+    "singleQuote": false,
+    "wrapAttributes": false,
+    "sortAttributes": false
+  }
+},
+"javascript.updateImportsOnFileMove.enabled": "never"
 }

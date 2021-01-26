@@ -1,3 +1,4 @@
+
 <template>
   <van-list
     v-model:loading="state.loading"
@@ -9,8 +10,7 @@
     <van-cell-group>
       <van-cell v-for="item in list" :key="item">
           <div class="flex">
-            <div>{{ item.mobile }}</div>
-            <div v-if="item.subtract !='0.000'" class="bold">-{{ toNum(item.subtract || 0) }}</div>
+            <div v-if="item.subtract" class="bold">-{{ toNum(item.subtract || 0) }}</div>
             <div v-else class="bold green">+{{ toNum(item.addition || 0) }}</div>
           </div>
           <div class="flex gray small">
@@ -46,7 +46,7 @@ export default defineComponent({
         pageSize: state.pageSize
       })
       console.log(data)
-      const rows: [] = data.rows
+      const rows: [] = data.pageData.rows
       if (rows.length < state.pageSize) {
         state.finished = true
       } else {

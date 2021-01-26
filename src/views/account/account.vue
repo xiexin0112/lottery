@@ -43,7 +43,7 @@
   </van-cell-group>
 
   <van-cell-group class="cells">
-    <van-cell title="Withdraw Cash" to="withdraw"  is-link >
+    <van-cell title="Envelope details" to="envelope"  is-link >
       <template #icon>
         <img class="icon" src="../../../src/assets/imgs/mcard.png" />
       </template>

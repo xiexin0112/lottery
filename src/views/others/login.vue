@@ -75,7 +75,7 @@ export default defineComponent({
         ...formData
       })
       $store.commit('USER_INFO', userInfo)
-      loginSuccess({})
+      loginSuccess({ username: userInfo.username })
       setTimeout(() => {
         Toast({
           message: 'login success',
